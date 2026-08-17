@@ -497,11 +497,6 @@ section {
 
     #menu-icon {
         display: block;
-        font-size: 3rem;
-    }
-
-    .header {
-        padding: 1.5rem 5%;
     }
 
     .navbar {
@@ -509,9 +504,11 @@ section {
         top: 100%;
         left: 0;
         width: 100%;
-        padding: 1rem 5%;
-        background: rgba(11, 15, 25, 0.97);
+        padding: 1.5rem 5%;
+        background: rgba(11, 15, 25, 0.95);
         backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        border-bottom: 1px solid var(--border-color);
         flex-direction: column;
         align-items: flex-start;
         display: none;
@@ -524,15 +521,15 @@ section {
     .navbar a {
         display: block;
         width: 100%;
-        font-size: 1.7rem;
-        margin: 1rem 0;
+        font-size: 1.8rem;
+        margin: 1.2rem 0;
     }
 
     .navbar a::after {
         display: none;
     }
 
-    /* Login & Sign Up */
+    /* Login & Sign Up Buttons */
     .auth-buttons {
         display: flex;
         gap: 0.7rem;
@@ -550,37 +547,46 @@ section {
         flex-direction: column-reverse;
         text-align: center;
         justify-content: center;
-        padding-top: 11rem;
+        padding-top: 12rem;
         gap: 3rem;
     }
 
     .home-content {
+        width: 100%;
         max-width: 100%;
-    }
-
-    .home-content h1 {
-        font-size: 4rem;
     }
 
     .home-content h3 {
         font-size: 2.2rem;
     }
 
+    .home-content h1 {
+        font-size: 4rem;
+        line-height: 1.2;
+    }
+
     .home-content p {
         font-size: 1.4rem;
+        line-height: 1.7;
+        max-width: 55rem;
         margin: 0 auto 2.5rem;
+    }
+
+    /* Profile Pictures */
+    .home-img img {
+        width: 60vw;
+        max-width: 280px;
+        min-width: 180px;
+    }
+
+    .about-img img {
+        width: 52vw;
+        max-width: 240px;
+        min-width: 180px;
     }
 
     .social-media {
         justify-content: center;
-    }
-
-    /* Images */
-    .home-img img,
-    .about-img img {
-        width: 60vw;
-        max-width: 280px;
-        min-width: 180px;
     }
 
     /* About */
@@ -591,6 +597,7 @@ section {
     }
 
     .about-content {
+        width: 100%;
         max-width: 100%;
     }
 
@@ -598,14 +605,29 @@ section {
         text-align: center;
     }
 
+    .about-content h3 {
+        font-size: 2.2rem;
+    }
+
+    .about-content p {
+        font-size: 1.4rem;
+        line-height: 1.7;
+    }
+
     /* Services */
     .services-container {
         grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .services-container > div {
+        padding: 2.5rem 2rem;
     }
 
     /* Portfolio */
     .portfolio-container {
         grid-template-columns: 1fr;
+        gap: 2rem;
     }
 
     .portfolio-box {
@@ -614,6 +636,10 @@ section {
 
     /* Contact */
     .contact form .input-box input {
+        width: 100%;
+    }
+
+    .contact form textarea {
         width: 100%;
     }
 
@@ -630,55 +656,30 @@ section {
         font-size: 50%;
     }
 
-    .header {
-        padding: 1.3rem 4%;
-    }
-
-    .logo {
-        font-size: 2rem;
-    }
-
-    #menu-icon {
-        font-size: 2.8rem;
-    }
-
-    /* Login & Sign Up */
-    .auth-buttons {
-        gap: 0.5rem;
-    }
-
-    .auth-buttons .btn {
-        padding: 0.7rem 0.8rem;
-        font-size: 1.1rem;
-    }
-
     .heading {
-        font-size: 3rem;
-    }
-
-    .home {
-        padding-top: 9rem;
-    }
-
-    .home-content h1 {
         font-size: 3.2rem;
     }
 
-    .home-content h3 {
-        font-size: 1.9rem;
-    }
-
-    .home-content p {
-        font-size: 1.3rem;
-    }
-
-    .home-img img,
-    .about-img img {
-        width: 60vw;
+    .home-img img {
+        width: 62vw;
         max-width: 240px;
     }
 
-    .portfolio-box {
-        min-height: 210px;
+    .about-img img {
+        width: 52vw;
+        max-width: 210px;
+    }
+
+    .auth-buttons {
+        display: flex;
+        gap: 0.5rem;
+        width: auto;
+    }
+
+    .auth-buttons .btn {
+        width: auto;
+        padding: 0.7rem 0.8rem;
+        font-size: 1.1rem;
+        white-space: nowrap;
     }
 }
