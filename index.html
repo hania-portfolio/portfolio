@@ -478,9 +478,7 @@
     </div>
 
 </section>
-    <!-- Contact Section -->
-    <!-- Digital Contact Section -->
-<section class="contact" id="contact">
+  <section class="contact" id="contact">
 
     <div class="section-tag">
         <span>// 03</span> HANIA COMMUNICATION SYSTEM
@@ -537,45 +535,61 @@
         </div>
 
 
-        <!-- Contact Form -->
-        <form class="contact-form" action="#">
+        <!-- Functional Contact Form -->
+        <form
+            class="contact-form"
+            action="https://formspree.io/f/xrpzobvd"
+            method="POST"
+        >
 
             <div class="form-row">
 
                 <input
                     type="text"
+                    name="first_name"
                     placeholder="FIRST NAME"
+                    autocomplete="given-name"
                     required
                 >
 
                 <input
                     type="text"
+                    name="last_name"
                     placeholder="LAST NAME"
+                    autocomplete="family-name"
                     required
                 >
 
             </div>
+
 
             <div class="form-row">
 
                 <input
                     type="email"
+                    name="email"
                     placeholder="EMAIL ADDRESS"
+                    autocomplete="email"
                     required
                 >
 
                 <input
                     type="tel"
+                    name="mobile"
                     placeholder="MOBILE NUMBER"
+                    autocomplete="tel"
                 >
 
             </div>
 
+
             <textarea
+                name="message"
                 rows="8"
                 placeholder="WRITE YOUR MESSAGE..."
                 required
             ></textarea>
+
 
             <button type="submit" class="transmit-btn">
                 <span>TRANSMIT MESSAGE</span>
