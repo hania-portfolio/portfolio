@@ -2311,3 +2311,46 @@ section {
     }
 
 }
+/* ===============================
+   AI AGENT RESPONSE
+================================ */
+
+#ai-response {
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.ai-message {
+    padding: 1.2rem 1.5rem;
+
+    background: rgba(0, 242, 254, 0.05);
+
+    border: 1px solid rgba(0, 242, 254, 0.2);
+
+    border-radius: 1rem;
+
+    color: var(--text-color);
+
+    font-size: 1.3rem;
+
+    text-align: left;
+
+    animation: aiResponse 0.3s ease;
+}
+
+.ai-message span {
+    color: var(--text-muted);
+}
+
+@keyframes aiResponse {
+
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
